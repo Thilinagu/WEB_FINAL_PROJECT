@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #d5d5d5;
+}
+
+header {
+   /* background: url(cover.png) no-repeat center center/cover; */
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1rem 0;
+    text-align: center;
+    filter: grayscale(10%);
+}
+.outlined-text {
+    font-size: 3rem;
+    text-shadow: 
+    -2px -2px 0 #000,  
+    2px -2px 0 #000,  
+    -2px 2px 0 #000,  
+    2px 2px 0 #000,
+    -2px 0 0 #000,
+    2px 0 0 #000,
+    0 -2px 0 #000,
+    0 2px 0 #000; 
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 
+    -1px -1px 0 #000,  
+        1px -1px 0 #000,  
+        -1px 1px 0 #000,  
+        1px 1px 0 #000;  
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+h1, h2 {
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.intro, .about, .gallery, .shop, .contact {
+    animation: fadeIn 2s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* Specific Section Styles */
+.intro {
+    text-align: center;
+}
+
+.featured-masks .mask, .gallery .mask, .shop .product {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gallery .mask img, .shop .product img {
+    width: 100%;
+    height: auto;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.featured {
+    padding: 50px;
+    
+  }
+
+.mask-grid {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+.mask {
+    flex: 0 0 auto;
+    margin-right: 20px;
+    text-align: center;
+  }
+
+  
+
+.mask p {
+    margin-top: 10px;
+  }
+
+.para_content {
+    max-width: 600px;
+    padding: 100px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: justify;
+}
+p {
+    margin-bottom: 1em;
+}
+
+.mask img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mask img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 ,p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container_C {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact-details {
+    text-align: center;
+}
+
+.map-container {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.contact-form {
+    margin: 20px 0;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label, input, textarea, button {
+    width: 100%;
+    max-width: 400px;
+    margin: 10px 0;
+}
+
+button {
+    width: auto;
+}
+
+button {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #444;
+    transform: translateY(-3px);
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.gallery img {
+    animation: slideIn 1s ease-out forwards;
+    opacity: 0; /* Ensure the images start hidden */
+}
+.gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+header {
+    animation: slideDown 0.5s ease-out forwards;
+    opacity: 0; /* Ensure the header starts hidden */
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function showThankYouMessage(event) {
+            event.preventDefault();
+            alert('Thank you for contacting us!');
+            document.getElementById('contact-form').reset();
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="outlined-text">Sri Lankan Mask Culture</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Explore with Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-details">
+            <div class="container">
+                <div class="video-container">
+                    <video width="600" height="340" controls autoplay muted>
+                        <source src="_Traditional mask curving in Galle Fort Sri Lanka Curated by Ceylon soul.mp4" type="video/mp4">
+                        
+                    </video>
+                </div>
+                <h2>Explore with Us</h2>
+                <p>Feel free to reach out to us through the following channels to explore the Traditional Mask culture.</p>
+                <p>Email: info@srilankanmaskculture.com</p>
+                <p>Phone: +94 123 456 789</p>
+                <p>Address: 123 Mask Street, Colombo, Sri Lanka</p>
+                <h2>Our Location</h2>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4047240.57960341!2d78.0635329422138!3d7.854884533701934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2593cf65a1e9d%3A0xe13da4b400e2d38c!2sSri%20Lanka!5e0!3m2!1sen!2sjp!4v1721228765809!5m2!1sen!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                 </div>
+            </div>
+        </section>
+    
+
+        <section class="contact-form">
+            <div class="container_C">
+                <h2>Contact Us</h2>
+                <form id="contact-form" onsubmit="showThankYouMessage(event)">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="name">Contact No:</label>
+                    <input type="text" id="contact" name="contact" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Sri Lankan Mask Culture</p>
+        </div>
+    </footer>
+</body>
+</html>
